@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/displayPhotoFragment">
+
+    <fragment
+        android:id="@+id/displayPhotoFragment"
+        android:name="com.example.kotlinflow.fragment.DisplayPhotoFragment"
+        android:label="fragment_display_photo"
+        tools:layout="@layout/fragment_display_photo" >
+        <action
+            android:id="@+id/action_displayPhotoFragment_to_photoDetailsFragment"
+            app:destination="@id/photoDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoDetailsFragment"
+        android:name="com.example.kotlinflow.fragment.PhotoDetailsFragment"
+        android:label="fragment_photo_details"
+        tools:layout="@layout/fragment_photo_details" />
+</navigation>
